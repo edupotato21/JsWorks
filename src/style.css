@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "dealerplate_california";
+    src: url('../public/fonts/dealerplate_california.ttf');
+}
+
+@font-face {
+    font-family: "arcenica_trial";
+    src: url('../public/fonts/ArsenicaTrial-Extrabold.ttf');
+}

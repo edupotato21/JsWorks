@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+</head>
+
+<body class="bg-white font-dealer">
+    <header class=" container mx-auto bg-white">
+        <!-- NAVBAR -->
+        <nav class="flex flex-wrap md:flex-nowrap justify-between md:justify-start md:space-x-7">
+            <div class="h-[60px] sm:h-[107px]">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="Logo" class="h-full">
+                </a>
+            </div>
+            <div class="md:hidden flex justify-center items-center">
+                <button id='boton' class="flex items-center px-3 py-2 text-primary hover:text-primary">
+                    <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu"
+                class="hidden w-full text-base text-center bg-primary md:flex md:items-center md:space-x-1 md:text-2xl md:bg-white">
+                <li class="border-2 border-t-white border-transparent">
+                    <a class="py-4 md:px-2 text-white md:text-black md:hover:text-primary md:hover:border-b-4 md:border-primary transition duration-100"
+                        href="#">Inicio</a>
+                </li>
+                <li class="border-2 border-t-white border-transparent">
+                    <a class="py-4 md:px-2 text-white md:text-black md:hover:text-primary md:hover:border-b-4 border-primary transition duration-300"
+                        href="#nosotros">Nosotros</a>
+                </li>
+                <li class="border-2 border-t-white border-transparent">
+                    <a class="py-4 md:px-2 text-white md:text-black md:hover:text-primary md:hover:border-b-4 border-primary transition duration-300"
+                        href="#catalogo">Catálogo</a>
+                </li>
+                <li class="border-2 border-t-white border-transparent">
+                    <a class="py-4 md:px-2 text-white md:text-black md:hover:text-primary md:hover:border-b-4 border-primary transition duration-300"
+                        href="#trabajos">Trabajos</a>
+                </li>
+                <li class="border-2 border-t-white border-transparent">
+                    <a class="py-4 md:px-2 text-white md:text-black md:hover:text-primary md:hover:border-b-4 border-primary transition duration-300"
+                        href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- BANNER -->
+        <div
+            class="flex mt-[20px] md:mt-0 md:mb-[20px] items-strech justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8">
+            <div class="flex items-center md:w-1/2 px-6">
+                <div class="flex flex-col justify-center">
+                    <span class="text-xl xl:text-2xl text-subtitle mb-2">COLECCIÓN 2022</span>
+                    <h1 class="text-secondary font-arsenica font-extrabold text-4xl xl:text-5xl mb-2">DISEÑO DE
+                        MUEBLES</h1>
+                    <div class="text-base xl:text-2xl text-paragraph border-l-8 border-secondary px-2 mb-2">
+                        <p>DISEÑO DE MUEBLES EXCLUSIVOS DE CALIDAD QUE SE ADECUAN A CUALQUIER ESPACIO DE TU HOGAR</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="https://api.whatsapp.com/send?phone=51971812096" target="_blank"
+                            class="text-base  md:text-xl lg:text-2xl mx-2 my-2 flex items-center bg-button transition duration-150 ease-in-out
+                        hover:bg-whatsapp rounded-full text-white pl-10 pr-11 lg:pl-12 lg:pr-14 py-1 md:py-2 focus:outline-none">
+                            <span>
+                                <img class="mr-2" src="./img/whatsapp.svg" alt="whatsapp logo">
+                            </span>
+                            COMPRAR AHORA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="" src="./img/recurso_1.png" alt="mueble">
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- NOSOTROS -->
+        <article
+            class="flex items-strech justify-center flex-col md:flex-row space-y-4 mt-[20px] md:mt-0 md:space-y-0 md:space-x-6 lg:space-x-8 md:mb-[20px]"
+            id="nosotros">
+            <div class="flex items-center md:w-1/2 px-6">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-xl xl:text-2xl text-subtitle mb-2">Nosotros</h2>
+                    <h3 class="text-secondary font-arsenica font-extrabold text-4xl xl:text-5xl mb-2">J'S HOME</h3>
+                    <div class="text-base xl:text-2xl text-paragraph border-l-8 border-secondary px-2 mb-2">
+                        <p>SOMOS UNA EMPRESA DEDICADA A LA ELABORACIÓN Y DISEÑO DE MUEBLES QUE SE ADECUAN A CUALQUIER
+                            ESPACIO DE TU HOGAR.</p>
+                        <br>
+                        <p>CONTAMOS CON EXPERIENCIA EN EL MERCADO DE ELABORACIÓN DE MUEBLES.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="" src="./img/recurso_2.png" alt="mueble">
+            </div>
+        </article>
+        <!-- CATALOGO -->
+        <article id="catalogo" class="mt-[20px] md:mt-0 md:mb-[20px]">
+            <h2 class="text-xl xl:text-2xl text-subtitle mb-2 ml-6">Catálogo</h2>
+            <!-- PRUEBA CARRUSEL -->
+            <!-- Slider main container -->
+            <div class="swiper h-[350px] md:h-[500px] w-auto">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper py-4">
+                    <!-- Slides -->
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_1.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_2.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_3.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_4.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_5.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_6.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-[300px] md:w-[500px]" src="./img/catalogo_image_7.jpg" alt="image">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="color: #119371;"></div>
+                <div class="swiper-button-next" style="color: #119371;"></div>
+
+            </div>
+        </article>
+        <!-- TRABAJOS -->
+        <article id="trabajos" class="mt-[20px] md:mt-0 md:mb-[20px]">
+            <h2 class="text-xl xl:text-2xl text-subtitle mb-2 ml-6">Trabajos</h2>
+            <div class="space-y-2 space-y-0 gap-1 lg:gap-2 md:gap-4 grid grid-cols-6 px-4">
+                <div class="flex flex-col gap-1 lg:gap-2 md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_3.jpg" alt="trabajos">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2 md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_4.jpg" alt="trabajos">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_9.jpg" alt="trabajos">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2 md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_2.jpg" alt="trabajos">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_6.jpg" alt="trabajos">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2 md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_1.jpg" alt="trabajos">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2 md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_10.jpg" alt="trabajos">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_5.jpg" alt="trabajos">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2  md:gap-4 justify-center items-center">
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_8.jpg" alt="trabajos">
+                    </div>
+                    <div class="w-full rounded">
+                        <img src="./img/trabajos_image_7.jpg" alt="trabajos">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- CONTACTO -->
+        <article id="contacto" class="mt-[20px] md:mt-0 md:mb-[20px]">
+            <div
+                class="flex items-strech justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8">
+                <div class="flex items-center md:w-1/2 px-6">
+                    <div class="flex flex-col justify-center">
+                        <span class="text-xl xl:text-2xl text-subtitle mb-2">CONTACTO</span>
+                        <h1
+                            class="text-secondary whitespace-pre-line font-arsenica font-extrabold text-4xl xl:text-5xl mb-2">
+                            COMUNICATE CON NOSOTROS
+                        </h1>
+                        <div class="flex justify-center">
+                            <a href="https://api.whatsapp.com/send?phone=51971812096" target="_blank"
+                                class="text-base  md:text-xl lg:text-2xl mx-2 my-2 flex items-center bg-button transition duration-150 ease-in-out
+                                hover:bg-whatsapp rounded-full text-white pl-10 pr-11 lg:pl-12 lg:pr-14 py-1 md:py-2 focus:outline-none">
+                                <span>
+                                    <img class="mr-2" src="./img/whatsapp.svg" alt="whatsapp logo">
+                                </span>
+                                COMPRAR AHORA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img class="" src="./img/recurso_2.png" alt="mueble">
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-secondary mt-[20px] md:mt-0">
+        <div class="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 px-4 py-12 ">
+            <div class="flex flex-col items-center justify-center">
+                <div>
+                    <span class="text-white text-xl">J'S HOME</span>
+                </div>
+                <div class="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
+                    <a href="#"
+                        class="focus:underline focus:outline-none hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">Inicio</a>
+                    <a href="#nosotros"
+                        class="focus:underline focus:outline-none hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">Nosotros</a>
+                    <a href="#catalogo"
+                        class="focus:underline focus:outline-none hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">Cátalogo</a>
+                    <a href="#trabajos"
+                        class="focus:underline focus:outline-none hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">Trabajos</a>
+                    <a href="#contacto"
+                        class="focus:underline focus:outline-none hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">Contacto</a>
+                </div>
+                <div class="flex items-center gap-x-8 mt-6">
+                    <a href="https://www.facebook.com/profile.php?id=100074999747478" aria-label="facebook"
+                        class="focus:ring-2 focus:ring-offset-2 focus:ring-2 focus:ring-gray-800 focus:outline-none rounded-full">
+                        <svg class="fill-current text-gray-800 dark:text-white hover:text-gray-500" width="22"
+                            height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.5 11.0631C21.5 5.26467 16.7984 0.56311 11 0.56311C5.20156 0.56311 0.5 5.26467 0.5 11.0631C0.5 16.3037 4.33906 20.6476 9.35938 21.4361V14.0992H6.69266V11.0631H9.35938V8.74983C9.35938 6.11873 10.9273 4.6642 13.3255 4.6642C14.4744 4.6642 15.6763 4.86952 15.6763 4.86952V7.45373H14.3516C13.048 7.45373 12.6402 8.2628 12.6402 9.09436V11.0631H15.552L15.087 14.0992H12.6406V21.437C17.6609 20.649 21.5 16.3051 21.5 11.0631Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex items-center mt-6">
+                    <p class="text-base leading-4 text-white">2022 <span class="font-semibold">J'S
+                            HOME</span></p>
+                    <div class="border-l border-gray-800 pl-2 ml-2">
+                        <p class="text-base leading-4 text-white">Inc. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
