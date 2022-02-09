@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: "dealerplate_california";
-    src: url('../public/fonts/dealerplate_california.ttf');
+    src: url('../public/fonts/dealerplate_california.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "arcenica_trial";
-    src: url('../public/fonts/ArsenicaTrial-Extrabold.ttf');
+    src: url('../public/fonts/ArsenicaTrial-Extrabold.ttf') format('truetype');
 }
